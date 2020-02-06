@@ -1,0 +1,53 @@
+body {
+  text-align: center;
+  color: white;
+  background: linear-gradient(#ffffff, #f9d3e1);
+  width: 100vw;
+  height:100vh;
+}
+
+/* performs animation of the 7 chosen colors */
+@keyframes bling {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 1063px;
+  }
+}
+
+h1 {
+  font: 600 3.5em 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: bling 3s linear infinite;
+  background-image: linear-gradient(to right, #fffc00, #ff9300, #f9d3e1, #ee719e, #cbf1ff, #00c7fd, #96d35f, #ff9300, #fffc00);
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: .1em;
+  color: white;
+  text-shadow: 2px 2px 5px #ee719e;
+}
+
+/* white-space pre needed when wanting to add new line using js */
+h3 {
+  white-space: pre;
+  letter-spacing: .1em;
+  color: white;
+  text-shadow: 1px 1px 5px #e63b7a;
+}
+
+/* random button customize */
+#random {
+  color: white;
+  background-color: #ff9500;
+  border: 1px solid white;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  padding: 5px 20px;
+  letter-spacing: 0.1rem;
+}
